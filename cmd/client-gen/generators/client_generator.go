@@ -42,6 +42,7 @@ func NameSystems() namer.NameSystems {
 		"DNS":                        "DNSes",
 		"Endpoints":                  "Endpoints",
 		"Features":                   "Features",
+		"FeaturesList":               "FeaturesList",
 		"SecurityContextConstraints": "SecurityContextConstraints",
 	}
 	lowercaseNamer := namer.NewAllLowercasePluralNamer(pluralExceptions)
@@ -96,10 +97,10 @@ func NameSystems() namer.NameSystems {
 	}
 	publicPluralNamer := &ExceptionNamer{
 		Exceptions: map[string]string{
-		// these exceptions are used to deconflict the generated code
-		// you can put your fully qualified package like
-		// to generate a name that doesn't conflict with your group.
-		// "k8s.io/apis/events/v1beta1.Event": "EventResource"
+			// these exceptions are used to deconflict the generated code
+			// you can put your fully qualified package like
+			// to generate a name that doesn't conflict with your group.
+			// "k8s.io/apis/events/v1beta1.Event": "EventResource"
 		},
 		KeyFunc: func(t *types.Type) string {
 			return t.Name.Package + "." + t.Name.Name

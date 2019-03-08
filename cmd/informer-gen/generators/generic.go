@@ -53,6 +53,7 @@ func (g *genericGenerator) Namers(c *generator.Context) namer.NameSystems {
 		"DNS":                        "DNSes",
 		"Endpoints":                  "Endpoints",
 		"Features":                   "Features",
+		"FeaturesList":               "FeaturesList",
 		"SecurityContextConstraints": "SecurityContextConstraints",
 	}
 	return namer.NameSystems{

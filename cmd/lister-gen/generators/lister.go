@@ -39,6 +39,7 @@ func NameSystems() namer.NameSystems {
 		"DNS":                        "DNSes",
 		"Endpoints":                  "Endpoints",
 		"Features":                   "Features",
+		"FeaturesList":               "FeaturesList",
 		"SecurityContextConstraints": "SecurityContextConstraints",
 	}
 	return namer.NameSystems{
